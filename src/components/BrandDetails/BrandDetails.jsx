@@ -9,6 +9,7 @@ export default function BrandDetails() {
         <title>Brand Details</title>
   </Helmet>
    <h2>BrandDetails</h2>
+ 
   </>
   
 }

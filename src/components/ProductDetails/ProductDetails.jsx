@@ -5,6 +5,7 @@ import axios from 'axios'
 import { useQuery } from 'react-query'
 import Slider from "react-slick";
 import {Helmet} from "react-helmet";
+import {RotatingLines} from 'react-loader-spinner'
 
 
 export default function ProductDetails() {
@@ -25,6 +26,7 @@ var settings = {
   slidesToScroll: 1,autoplay:true
 };
 return <>
+
  <div className="container">
      {data?.data.data? <div className="row py-2 align-items-center">
       <Helmet>
@@ -52,8 +54,17 @@ return <>
           </div>
           <button className="btn bg-main w-100 text-white">add to cart</button>
         </div>
-      </div>:''}
+      </div>:<div className="loading w-100 vh-100 d-flex justify-content-center align-items-center">
+    <RotatingLines
+      strokeColor="grey"
+      strokeWidth="5"
+      animationDuration="0.75"
+      width="96"
+      visible={true}
+    /></div>}
     </div>
+
   </> 
   
 }
+
