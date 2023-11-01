@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from 'react'
 import Style from './Cart.module.css'
 import { CartContext } from '../../Context/CartContext'
 import { Link } from 'react-router-dom';
-import { OrdersContext } from '../../Context/OrdersContext';
 import {Helmet} from "react-helmet";
 
 export default function Cart() {  

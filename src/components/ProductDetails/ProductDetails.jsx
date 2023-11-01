@@ -54,14 +54,7 @@ return <>
           </div>
           <button className="btn bg-main w-100 text-white">add to cart</button>
         </div>
-      </div>:<div className="loading w-100 vh-100 d-flex justify-content-center align-items-center">
-    <RotatingLines
-      strokeColor="grey"
-      strokeWidth="5"
-      animationDuration="0.75"
-      width="96"
-      visible={true}
-    /></div>}
+      </div>:''}
     </div>
 
   </> 
